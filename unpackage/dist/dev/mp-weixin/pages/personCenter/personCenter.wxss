@@ -1,0 +1,53 @@
+
+.personInformation {
+		background-color: #88dfbf;
+		height: 170px;
+}
+	
+/* 姓名信息栏 */
+.mainInformation {
+		padding-top:50px;
+}
+	
+/* 姓名， */
+.nameSex {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding-left: 130px;
+		margin: 10px;
+		position: relative;
+}
+	
+/* 右图标 */
+.rightIcon {
+		position: fixed;
+		position: absolute;
+		right:5%;
+		z-index: 1;
+}
+	
+/* 个人信息间隔 */
+.information{
+		margin-left: 10rpx;
+		margin-right:10rpx;
+}
+	
+/* 头像 */
+.image {
+		position: fixed;
+		position: absolute;
+		left:15%;
+		top:8%;
+		z-index:1;
+}
+.addicon{
+		position: fixed;
+		bottom:10rpx;
+		right:50%;
+		-webkit-transform: translate(50%);
+		        transform: translate(50%);
+		z-index: 1;
+}
+	
+

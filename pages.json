@@ -1,51 +1,116 @@
 {
-		// 如果您是通过uni_modules形式引入uView，可以忽略此配置
-	"easycom": {
-		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
-	},
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/1",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom" ,
-				"navigationBarBackgroundColor":"#48d1b3",	
-				"bounce": "none"
-			}
-		},{
-			"path": "pages/3",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"  
-			}
-		},
-		{
-			"path": "pages/2",
-			"style": {
-				"navigationBarTextStyle": "black",
-				"navigationBarTitleText": "写文章",
-				"navigationBarBackgroundColor": "#F8F8F8"
-				
-			}
-		}
-	    ,
-		{
-		    "path" : "pages/4",
-		    "style" :                                                                                    
-		    {   
-				"navigationBarTextStyle": "black",
-				"navigationBarTitleText": "作文浏览",
-				"navigationBarBackgroundColor": "#F8F8F8",
-		        "enablePullDownRefresh": false
-		    }
-		    
-		}
+    // 如果您是通过uni_modules形式引入uView，可以忽略此配置
+    "easycom": {
+        "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/enter",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/register",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/personSetting",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+        }, {
+            "path": "pages/identityInformation",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+        }, {
+            "path": "pages/homePage",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false,
+                "onReachBottonDistance": 50
+
+            }
+        }, {
+            "path": "pages/discover",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white",
+                "enablePullDownRefresh": false
+            }
+        }, {
+            "path": "pages/scrip",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white"
+            }
+
+        }, {
+            "path": "pages/personCenter",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white"
+            }
+
+        },
+        {
+            "path": "pages/index",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTextStyle": "white"
+            }
+
+        },
+        {
+            "path": "pages/1",
+            "style": {
+                "navigationBarTitleText": "uni-app",
+                "navigationStyle": "custom",
+                "navigationBarBackgroundColor": "#48d1b3",
+                "bounce": "none"
+            }
+        }, {
+            "path": "pages/3",
+            "style": {
+                "navigationBarTitleText": "uni-app",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/2",
+            "style": {
+                "navigationBarTextStyle": "black",
+                "navigationBarTitleText": "写文章",
+                "navigationBarBackgroundColor": "#F8F8F8"
+
+            }
+        },
+        {
+            "path": "pages/4",
+            "style": {
+                "navigationBarTextStyle": "black",
+                "navigationBarTitleText": "作文浏览",
+                "navigationBarBackgroundColor": "#F8F8F8",
+                "enablePullDownRefresh": false
+            }
+
+        }
     ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"bounce":"none"
-	}
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
 }

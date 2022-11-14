@@ -1,0 +1,1 @@
+<view style="padding:20px;"><u-button vue-id="8dd740cc-1" text="1" data-event-opts="{{[['^click',[['changePage',[1]]]]]}}" bind:click="__e" bind:__l="__l"></u-button><u-button vue-id="8dd740cc-2" text="2" bind:__l="__l"></u-button><u-button vue-id="8dd740cc-3" text="3" bind:__l="__l"></u-button><u-button vue-id="8dd740cc-4" text="4" bind:__l="__l"></u-button></view>

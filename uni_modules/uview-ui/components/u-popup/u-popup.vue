@@ -13,7 +13,7 @@
 			:customStyle="transitionStyle"
 			:mode="position"
 			:duration="duration"
-			@afterEnter="afterEnter"
+			@after-enter="afterEnter"
 			@click="clickHandler"
 		>
 			<view

@@ -97,7 +97,7 @@
 				}
 			},
 			fontSize() {
-				// #ifdef APP-NVUE
+				t // #ifdef APP-NVUE
 				this.nvueInit = true
 				// #endif
 				// #ifndef APP-NVUE

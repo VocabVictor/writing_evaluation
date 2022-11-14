@@ -232,9 +232,8 @@ function promise(value) {
  * @param {Object} value
  */
 function image(value) {
-    const newValue = value.split('?')[0]
     const IMAGE_REGEXP = /\.(jpeg|jpg|gif|png|svg|webp|jfif|bmp|dpg)/i
-    return IMAGE_REGEXP.test(newValue)
+    return IMAGE_REGEXP.test(value)
 }
 
 /**
@@ -242,7 +241,7 @@ function image(value) {
  * @param {Object} value
  */
 function video(value) {
-    const VIDEO_REGEXP = /\.(mp4|mpg|mpeg|dat|asf|avi|rm|rmvb|mov|wmv|flv|mkv|m3u8)/i
+    const VIDEO_REGEXP = /\.(mp4|mpg|mpeg|dat|asf|avi|rm|rmvb|mov|wmv|flv|mkv)/i
     return VIDEO_REGEXP.test(value)
 }
 

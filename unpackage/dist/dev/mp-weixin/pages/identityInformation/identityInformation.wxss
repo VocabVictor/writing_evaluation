@@ -1,0 +1,9 @@
+
+.mainContent {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5vw 10vw;
+}
+

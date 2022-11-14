@@ -1,0 +1,31 @@
+
+.mainbox{
+	padding:30rpx;
+}
+.svebox{
+	height:140rpx;
+	margin-top: 40rpx;
+}
+.textbox{
+	height:110rpx;
+	display:flex; 
+	flex-direction: column;
+	justify-content:flex-end;
+	margin-left: 20rpx;
+}
+.artical{
+	padding-top:40rpx;
+}
+.bottombutton{
+	width:95%;
+	position: absolute;
+	bottom:20rpx;
+	left:50%;
+	-webkit-transform: translate(-50%);
+	        transform: translate(-50%);
+	border-radius: 0rpx;
+}
+.u-button{
+	margin: 10rpx;
+}
+

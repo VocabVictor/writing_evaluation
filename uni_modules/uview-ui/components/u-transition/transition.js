@@ -41,11 +41,10 @@ export default {
 				// #ifdef H5
 				await uni.$u.sleep(20)
 				// #endif
-                // 标识动画尚未结束
-                this.$emit('enter')
-                this.transitionEnded = false
-				// 组件动画进入后触发的事件
+                // 组件动画进入后触发的事件
                 this.$emit('afterEnter')
+                // 标识动画尚未结束
+                this.transitionEnded = false
                 // 赋予组件enter-to类名
                 this.classes = classNames['enter-to']
             })
@@ -62,9 +61,8 @@ export default {
             this.classes = classNames.leave
 
             this.$nextTick(() => {
-               // 动画正在离场的状态
-               this.transitionEnded = false
-               this.$emit('leave')
+                // 标记动画已经结束了
+                this.transitionEnded = false
                 // 组件执行动画，到了执行的执行时间后，执行一些额外处理
                 setTimeout(this.onTransitionEnd, this.duration)
                 this.classes = classNames['leave-to']

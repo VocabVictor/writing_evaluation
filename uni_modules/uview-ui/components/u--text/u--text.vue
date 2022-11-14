@@ -14,7 +14,6 @@
         :block="block"
         :lines="lines"
         :color="color"
-		:decoration="decoration"
         :size="size"
         :iconStyle="iconStyle"
         :margin="margin"

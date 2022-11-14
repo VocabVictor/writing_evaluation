@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/enter/enter",
+    "pages/register/register",
+    "pages/personSetting/personSetting",
+    "pages/identityInformation/identityInformation",
+    "pages/homePage/homePage",
+    "pages/discover/discover",
+    "pages/scrip/scrip",
+    "pages/personCenter/personCenter",
+    "pages/index/index",
+    "pages/1",
+    "pages/3",
+    "pages/2",
+    "pages/4"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "safeheader": "/pages/safeheader",
+    "mytabbar": "/component/mytabbar"
+  }
+}

@@ -119,8 +119,8 @@
 						this.isError = true
 						
 					} else {
-						this.isError = false;
-						this.loading = true;
+						this.isError = false
+						this.loading = false
 					}
 				}
 			}

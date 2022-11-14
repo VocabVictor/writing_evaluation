@@ -1,0 +1,31 @@
+
+.mainbox {
+        padding-top:25px;
+		padding-right:30rpx;
+		padding-left:30rpx;
+		display: flex;
+		flex-direction: column;
+}
+.itembox{
+		display: flex;
+        flex-direction: row;
+		flex-wrap:wrap;
+		gap:20rpx;
+		margin-left: 10rpx;
+}
+.u-page__tag-item{
+		width:20%;
+}
+.u-collapse-item__content{
+		display: flex;
+}
+.bottombutton{
+		width:90%;
+		position: absolute;
+		bottom:10rpx;
+		left:50%;
+		-webkit-transform: translate(-50%);
+		        transform: translate(-50%);
+		border-radius: 0rpx;
+}
+

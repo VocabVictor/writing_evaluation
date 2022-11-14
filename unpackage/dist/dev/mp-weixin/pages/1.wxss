@@ -1,0 +1,25 @@
+
+.index {
+	padding-top: 25px;
+}
+.addicon {
+	position: fixed;
+	bottom: 10rpx;
+	right: 50%;
+	-webkit-transform: translate(50%);
+	        transform: translate(50%);
+	z-index: 1;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.maintext {
+	padding-top: 100rpx;
+}
+.ptext {
+	padding-top: 50rpx;
+}
+

@@ -3,39 +3,22 @@
 	<view class="mainbox">
 		<u-search class="searchbar" placeholder="搜索" v-model="searchcontent"></u-search>
 		<u-collapse @change="change" @close="close" @open="open" >
-			<u-collapse-item title="人物话题" >
-				<!-- 标签部分 -->
-			 <view class="itembox">
-			 <view class="u-page__tag-item" v-for="(item, index) in checkboxs1" :key="index">
-			 <u-tag :text="`选项${index + 1}`" :plain="!item.checked" type="success" :name="index"
-			    @click="checkboxClick1">	
-			 	</u-tag>
-			 </view>
-			 </view>
-			</u-collapse-item>
-			<u-collapse-item title="自然话题">
-			 <view class="itembox">
-			 <view class="u-page__tag-item" v-for="(item, index) in checkboxs2" :key="index">
-			 <u-tag :text="`选项${index + 1}`" :plain="!item.checked" type="success" :name="index"
-			    @click="checkboxClick2">	
-			 	</u-tag>
-			 </view>
-			 </view>			</u-collapse-item>
-			<u-collapse-item title="植物话题">
-			 <view class="itembox">
-			 <view class="u-page__tag-item" v-for="(item, index) in checkboxs3" :key="index">
-			 <u-tag :text="`选项${index + 1}`" :plain="!item.checked" type="success" :name="index"
-			    @click="checkboxClick3">	
-			 	</u-tag>
-			 </view>
-			 </view>			</u-collapse-item>
+		<!-- ///////////////////////////// -->
+			 <u-collapse-item v-for="obj in data.data" :title="obj.type">
+				 <view class="itembox">
+					 <!-- item指[亲人,朋友...]中的一个 -->
+				 <view class="u-page__tag-item" v-for="(item, index) in obj.data" :key="index">
+				 <u-tag :text="`${item}`" :plain="(obj.isOpen)==index?false:true" type="success" :name="index"
+				    @click="changePlain(obj,index)">	
+				 	</u-tag>
+				 </view>
+				 </view>
+			 </u-collapse-item>
 		</u-collapse>
+		<!-- ////////////////////// -->
 		   <!-- 底部按钮 -->
 		 <u-row class="bottombutton" ><u-button class="bottombutton"  color="rgb(74,209,181)" @click="changePage()">下一步</u-button></u-row>
 	</view>
-	  
-	
-
 </template>
 
 <script>
@@ -43,12 +26,12 @@
 		data() {
 			return {
 				searchcontent: "",
-				checkboxs1: [{checked: false},{checked: false},{checked: false},{checked: false},{checked: false}	
-				],
-				checkboxs2: [{checked: false},{checked: false},{checked: false},{checked: false},{checked: false}
-				],
-				checkboxs3: [{checked: false},{checked: false},{checked: false},{checked: false},{checked: false}	
-				]
+				data:{"data":[{"id":1,"type":"人物话题","data":["亲人","朋友","名人","自己"],"isOpen":-1},
+       {"id":2,"type":"自然话题","data":["环境","环保","风景","其他"],"isOpen":-1},{"id":3,"type":"植物话题","data":["鲜花","绿草","大树","其他"],"isOpen":-1},{"id":4,"type":"节日话题","data":["传统","西方","春节","其他"],"isOpen":-1},{"id":5,"type":"动物话题","data":["城市","乡村","自然","其他"],"isOpen":-1},{"id":6,"type":"情感话题","data":["亲情","友情","爱情","自情"],"isOpen":-1},{"id":7,"type":"事物话题","data":["食品","用品","工具","其他"],"isOpen":-1}
+         ]} ,
+     sdata:{"data":[{"id":1,"type":"人物话题","data":["亲人","朋友","名人","自己"],"isOpen":-1},
+        {"id":2,"type":"自然话题","data":["环境","环保","风景","其他"],"isOpen":-1},{"id":3,"type":"植物话题","data":["鲜花","绿草","大树","其他"],"isOpen":-1},{"id":4,"type":"节日话题","data":["传统","西方","春节","其他"],"isOpen":-1},{"id":5,"type":"动物话题","data":["城市","乡村","自然","其他"],"isOpen":-1},{"id":6,"type":"情感话题","data":["亲情","友情","爱情","其他"],"isOpen":-1},{"id":7,"type":"事物话题","data":["食品","用品","工具","其他"],"isOpen":-1}
+     ]}
 			}
 		},
 		methods: {
@@ -61,19 +44,23 @@
 			change(e) {
 				// console.log('change', e)
 			},
-			checkboxClick1(name) {
-				this.checkboxs1[name].checked = !this.checkboxs1[name].checked
-			},	checkboxClick2(name) {
-				this.checkboxs2[name].checked = !this.checkboxs2[name].checked
-			},	checkboxClick3(name) {
-				this.checkboxs3[name].checked = !this.checkboxs3[name].checked
-			},
+			radioClick(name) {
+			    this.radios.map((item, index) => {
+				item.checked = index === name ? true : false
+				      })
+						},
 			changePage(){
 				uni.navigateTo({
 					url:"./2"
 				})
-			}
-
+			},
+		   changePlain(obj,index){
+			
+			   if(obj.isOpen == index){
+				   obj.isOpen = -1;
+			   }
+			   else obj.isOpen = index;
+		   }
 		}
 	};
 </script>
@@ -91,6 +78,7 @@
         flex-direction: row;
 		flex-wrap:wrap;
 		gap:20rpx;
+		margin-left: 10rpx;
 	}
 	.u-page__tag-item{
 		width:20%;

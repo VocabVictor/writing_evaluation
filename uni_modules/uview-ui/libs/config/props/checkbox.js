@@ -11,7 +11,7 @@ export default {
     // checkbox组件
     checkbox: {
         name: '',
-        shape: '',
+        shape: 'square',
         size: '',
         checkbox: false,
         disabled: '',

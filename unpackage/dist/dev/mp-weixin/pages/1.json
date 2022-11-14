@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#48d1b3",
+  "bounce": "none",
+  "usingComponents": {
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "u-text": "/uni_modules/uview-ui/components/u-text/u-text"
+  }
+}

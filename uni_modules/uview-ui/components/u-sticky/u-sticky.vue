@@ -61,7 +61,7 @@
 					style.position = 'relative'
 					// #endif
 					// #ifndef APP-NVUE
-					style.position = 'static'
+					style.position = 'assets'
 					// #endif
 				}
 				style.backgroundColor = this.bgColor
@@ -71,7 +71,7 @@
 			stickyContent() {
 				const style = {}
 				if (!this.cssSticky) {
-					style.position = this.fixed ? 'fixed' : 'static'
+					style.position = this.fixed ? 'fixed' : 'assets'
 					style.top = this.stickyTop + 'px'
 					style.left = this.left + 'px'
 					style.width = this.width == 'auto' ? 'auto' : this.width + 'px'

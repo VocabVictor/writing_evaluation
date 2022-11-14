@@ -1,0 +1,20 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "写文章",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "usingComponents": {
+    "u-form": "/uni_modules/uview-ui/components/u-form/u-form",
+    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
+    "u--input": "/uni_modules/uview-ui/components/u--input/u--input",
+    "u-line": "/uni_modules/uview-ui/components/u-line/u-line",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u--textarea": "/uni_modules/uview-ui/components/u--textarea/u--textarea",
+    "u-row": "/uni_modules/uview-ui/components/u-row/u-row",
+    "u-col": "/uni_modules/uview-ui/components/u-col/u-col",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u-picker": "/uni_modules/uview-ui/components/u-picker/u-picker",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
+  }
+}

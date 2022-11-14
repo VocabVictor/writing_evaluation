@@ -1,0 +1,13 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "作文浏览",
+  "navigationBarBackgroundColor": "#F8F8F8",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-row": "/uni_modules/uview-ui/components/u-row/u-row",
+    "u-avatar": "/uni_modules/uview-ui/components/u-avatar/u-avatar",
+    "u-text": "/uni_modules/uview-ui/components/u-text/u-text",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
+  }
+}

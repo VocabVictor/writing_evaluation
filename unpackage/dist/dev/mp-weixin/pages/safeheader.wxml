@@ -1,0 +1,1 @@
+<view class="data-v-9c2efeda"><view class="mynavbar data-v-9c2efeda" style="{{'padding-top:'+(statusbarheight+'px')+';'+('background:'+(background)+';')}}"></view><slot></slot></view>
